@@ -72,3 +72,7 @@ It is mandatory to use prepared statements for queries to prevent most of the SQ
 ## Useful resources:
 - [How to prevent SQLi attacks?](https://www.esecurityplanet.com/threats/how-to-prevent-sql-injection-attacks.html)
 - [OWASP - Blind SQL Injection](https://owasp.org/www-community/attacks/Blind_SQL_Injection)
+- [Basic step-by-step concept of SQL Injection - hacksplaining.com](https://www.hacksplaining.com/exercises/sql-injection#)
+- [Redtiger - OverTheWire](https://redtiger.labs.overthewire.org/)
+
+*Docker container for SQL Injection practice soon!*
