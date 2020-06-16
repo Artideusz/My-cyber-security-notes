@@ -1,6 +1,8 @@
 # SQL Injection
 
-There are 2 types of SQL Injection:
+An SQL Injection is a type of a cyber-attack that leverages input or HTTP requests to extract data from a database. It's the most common cyber-attack according to the [OWASP Top 10](https://owasp.org/www-project-top-ten/) ranking of the most common web application security risks.
+
+There are basically 2 types of SQL Injection:
 
 ## In-band / Classic SQLi
 
@@ -68,6 +70,14 @@ This technique is similar to the time-based attack, but rather than delaying the
 #### How to prevent it?
 It is mandatory to use prepared statements for queries to prevent most of the SQLi's that are available.
 
+## Tools for SQL Injection scanning
+
+### **SQLMap**
+
+SQLMap is a database assessment tool that focuses on automatic testing for SQLi's in an application. It supports a huge list of DBMSes and it's worth learning the syntax for it if you want to automate SQL Injection checks. I recommend learning how to write SQL Injection strings manually though if you are a beginner so you have a better understanding on how SQL Injections work in general and how SQLMap works under the hood as well.
+
+- SQLMap Homepage: http://sqlmap.org/
+- SQLMap wiki: https://github.com/sqlmapproject/sqlmap/wiki
 
 ## Useful resources:
 - [How to prevent SQLi attacks?](https://www.esecurityplanet.com/threats/how-to-prevent-sql-injection-attacks.html)
