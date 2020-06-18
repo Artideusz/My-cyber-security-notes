@@ -45,7 +45,7 @@ We add another null to our second SELECT operator until we recieve some data. Wh
 This kind of query sent to the database results in information about the database location, table name and version of the OS the database is running on. The second UNION select is for the " left from the injection since we're using the WHERE operator in the first UNION operator.
 ```
 #### How to prevent it?
-It is mandatory to use prepared statements for queries to prevent most of the SQLi's that are available.
+It is mandatory to use prepared statements for queries to prevent most of the SQLi's that are available. I also recommend checking out the [SQL Injection Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html) for more information.
 
 ### Links related to Union-Based SQLi:
 - [NetSPI SQL Injection Wiki - Information Gathering](https://sqlwiki.netspi.com/attackQueries/informationGathering/#mysql)
@@ -61,14 +61,14 @@ This type of attack is slower than classical SQLi, since he does not have any ou
 This type of attack relies on the SLEEP function or any technique that delays the response. The attacker can append a SLEEP function to enumerate the database based on the result. If a query is true, the database response takes longer to be recieved. Thanks to this technique, the attacker can enumerate the whole database and do alot of damage.
 
 #### How to prevent it?
-It is mandatory to use prepared statements for queries to prevent most of the SQLi's that are available.
+It is mandatory to use prepared statements for queries to prevent most of the SQLi's that are available. I also recommend checking out the [SQL Injection Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html) for more information.
 
 ### **Boolean-Based SQLi**
 
 This technique is similar to the time-based attack, but rather than delaying the response, the response changes depending if the result of the query is TRUE or FALSE. The attacker must distinguish the difference in the content when the result is true of false, only then he can launch a boolean-based SQLi attack.
 
 #### How to prevent it?
-It is mandatory to use prepared statements for queries to prevent most of the SQLi's that are available.
+It is mandatory to use prepared statements for queries to prevent most of the SQLi's that are available. I also recommend checking out the [SQL Injection Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html) for more information.
 
 ## Tools for SQL Injection scanning
 
@@ -81,8 +81,9 @@ SQLMap is a database assessment tool that focuses on automatic testing for SQLi'
 
 ## Useful resources:
 - [How to prevent SQLi attacks?](https://www.esecurityplanet.com/threats/how-to-prevent-sql-injection-attacks.html)
+- [SQL Injection Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)
 - [OWASP - Blind SQL Injection](https://owasp.org/www-community/attacks/Blind_SQL_Injection)
 - [Basic step-by-step concept of SQL Injection - hacksplaining.com](https://www.hacksplaining.com/exercises/sql-injection#)
 - [Redtiger - OverTheWire](https://redtiger.labs.overthewire.org/)
 
-*Docker container for SQL Injection practice soon!*
+*Docker container for SQL Injection attack and defense practice soon!*
