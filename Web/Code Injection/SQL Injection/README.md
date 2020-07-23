@@ -85,5 +85,6 @@ SQLMap is a database assessment tool that focuses on automatic testing for SQLi'
 - [OWASP - Blind SQL Injection](https://owasp.org/www-community/attacks/Blind_SQL_Injection)
 - [Basic step-by-step concept of SQL Injection - hacksplaining.com](https://www.hacksplaining.com/exercises/sql-injection#)
 - [Redtiger - OverTheWire](https://redtiger.labs.overthewire.org/)
+- [PayloadsAllTheThings - SQL Injection Cheat Sheet List](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection)
 
 *Docker container for SQL Injection attack and defense practice soon!*

@@ -58,15 +58,15 @@ Similarly to the way reflected XSS is prevented.
 
 ## Persistent XSS
 
-This is one of the more dangerous XSS attacks out there, since the malicious javascript is returned by the server itself. This type of attack focuses on sending javascript code to a server, that later saves it in it's database and outputs it for everyone that views the page with that output from the database. A simple example would be:
+This is one of the more dangerous XSS attacks out there, since the malicious javascript is returned by the server itself. The way this is dangerous is that nobody really knows if the next page they load on the browser will be malicious or not, because the malicious code is not visible within the URL. This type of attack focuses on sending javascript code to a server, that later saves it in it's database and outputs it for everyone that views the page with that output from the database. A simple example would be:
 
 - An attacker creates a post with javascript code as the content on a social media page.
 - The server sends that input to a database.
-- After some time, a user goes on a page where this post is shown.
+- After some time, a user goes on a page where this post is fetched from the database.
 - The server returns the post from the database with the malicious javascript to the victim.
-- The javascript code is executed on the victims browser.
+- The malicious javascript code is executed.
 
-This is especially dangerous since the attacker does not need to go on groups or find individual targets to send the malicious URL to. Anybody that views the malicious post will have the javascript code  executed on their browser.
+
 
 ### How to prevent it?
 
@@ -83,4 +83,5 @@ There are a ton of XSS scanning tools that I will describe in the next update.
 - [OWASP - XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 - [OWASP - XSS Filter Evasion Cheat Sheet](https://owasp.org/www-community/xss-filter-evasion-cheatsheet)
 - [Kurobeats - XSS Vectors Cheat Sheet](https://gist.github.com/kurobeats/9a613c9ab68914312cbb415134795b45)
+- [Google Gruyere](https://google-gruyere.appspot.com/)
 
