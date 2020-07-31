@@ -34,3 +34,5 @@ https://en.wikipedia.org/wiki/DHCP_snooping
 ### Useful links
 - [Wikipedia - DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol)
 - [CVE Details - DHCP Vulnerabilities](https://www.cvedetails.com/vulnerability-list/vendor_id-64/product_id-17706/ISC-Dhcp.html)
+- [DHCP Snooping 1](https://www.pearsonitcertification.com/articles/article.aspx?p=2474170)
+- [DHCP Snooping 2 - Youtube](https://www.youtube.com/watch?v=9guJgF8v3_whttps://www.youtube.com/watch?v=9guJgF8v3_w)

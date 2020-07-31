@@ -1,0 +1,13 @@
+Werkzeug/1.0.1 Python/3.6.9
+
+http://one.jh2i.com:50018/
+
+Images to check:
+    https://i.pinimg.com/originals/69/d5/5f/69d55f65ab05873a476c16fa24b4a8d4.jpg
+    https://image.freepik.com/free-vector/ladybug-cartoon_33070-2821.jpg
+    https://i.pinimg.com/originals/ae/e5/8e/aee58eb9894856f94aa36de840c0488c.png
+    https://i.pinimg.com/originals/d5/94/8d/d5948deb7e6673b4d12fd255f8ebb54d.png
+
+Forms:
+    http://one.jh2i.com:50018/mail.php - POST
+    http://one.jh2i.com:50018/?search=example - GET
