@@ -66,8 +66,6 @@ This is one of the more dangerous XSS attacks out there, since the malicious jav
 - The server returns the post from the database with the malicious javascript to the victim.
 - The malicious javascript code is executed.
 
-
-
 ### How to prevent it?
 
 Similarly to the way reflected XSS is prevented.
