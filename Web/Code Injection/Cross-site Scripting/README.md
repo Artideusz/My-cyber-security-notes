@@ -88,4 +88,8 @@ There are a ton of XSS scanning tools that I will describe in the next update.
 - [OWASP - XSS Filter Evasion Cheat Sheet](https://owasp.org/www-community/xss-filter-evasion-cheatsheet)
 - [Kurobeats - XSS Vectors Cheat Sheet](https://gist.github.com/kurobeats/9a613c9ab68914312cbb415134795b45)
 - [Google Gruyere](https://google-gruyere.appspot.com/)
+<<<<<<< HEAD
 - [DOM-Based XSS Explanation](http://www.webappsec.org/projects/articles/071105.shtml)
+=======
+
+>>>>>>> 127c3963d6ddd25983b65577386b20376885d07a
