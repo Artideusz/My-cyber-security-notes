@@ -52,7 +52,7 @@ This attack is pretty similar to Reflected XSS, but it depends on the javascript
         |  Item1  |  Item2  |  Item3  |  Item4  |
         ...
 
-    Upon typing user input to the serachbar, items appear or disappear accordingly to what was typed (because of AJAX).
+    Upon typing stuff into the searchbar, items appear or disappear accordingly to what was typed (because of AJAX).
 
     If the attacker gives a simple script tag with an alert function to the input, the alert box opens.
 ```

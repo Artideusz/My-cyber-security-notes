@@ -1,7 +1,7 @@
 # Cyber-Security - Notes
 
 Navigation:
-- [Intelligence Gathering]()
+- Intelligence Gathering
 - Write-ups
     - [CTFs](https://github.com/Artideusz/My-cyber-security-notes/tree/master/My%20write-ups/CTFs)
 - Web
