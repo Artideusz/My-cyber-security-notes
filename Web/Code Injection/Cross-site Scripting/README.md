@@ -35,6 +35,7 @@ Would look like this:
 ### How to prevent it?
 
 Always sanitize and validate user input. The easiest way to do that is to use a library that validates and sanitizes user input. I really recommend reading through the [OWASP XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html).
+
 ## DOM-Based XSS
 
 This attack is pretty similar to Reflected XSS, but it depends on the javascript that is already on the site. The way it differs from a reflected XSS attack is that the input is processed client-side only. The malicious code isn't sent from the server. For example:
@@ -88,8 +89,4 @@ There are a ton of XSS scanning tools that I will describe in the next update.
 - [OWASP - XSS Filter Evasion Cheat Sheet](https://owasp.org/www-community/xss-filter-evasion-cheatsheet)
 - [Kurobeats - XSS Vectors Cheat Sheet](https://gist.github.com/kurobeats/9a613c9ab68914312cbb415134795b45)
 - [Google Gruyere](https://google-gruyere.appspot.com/)
-<<<<<<< HEAD
 - [DOM-Based XSS Explanation](http://www.webappsec.org/projects/articles/071105.shtml)
-=======
-
->>>>>>> 127c3963d6ddd25983b65577386b20376885d07a
