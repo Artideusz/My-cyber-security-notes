@@ -10,21 +10,21 @@ There are three main types of XSS:
 
 ### How does it work?
 
-This type of XSS takes advantage of poorly sanitized output of a GET query to execute the javascript code. For example:
+This type of XSS takes advantage of poor server-side sanitization of GET queries. It works like this:
 ```
     1.  We have a URL: https://example.com?keyword=123
 
             That returns a page with text saying:
             "Sorry, no item named 123 exists in our database."
 
-    2.  An attacker tests if javascript can be executed using the keyword parameter, so he crafts the following URL:
+    2.  To check if the site sanitizes the input on the server-side, you can craft the following example URL:
 
         https://example.com?keyword=<script>alert('XSS')</script>
 
-            That returns an alert popup displaying the text "XSS".
+            If the site is vulnerable to reflected XSS, the site returns an alert popup displaying the text "XSS" and the script tag visible in the initial server response.
 ```
 
-This way the attacker can execute javascript in the victims browser, he could also mask the javascript code by encoding the characters in a way that doesnt look suspicious. For example:
+This way the attacker can execute javascript in the victims browser, he could also mask the javascript code by encoding the characters in a way that doesnt look very suspicious. For example:
 
 `https://example.com?keyword=<script>alert('XSS')</script>` 
 
@@ -38,26 +38,27 @@ Always sanitize and validate user input. The easiest way to do that is to use a 
 
 ## DOM-Based XSS
 
-This attack is pretty similar to Reflected XSS, but it depends on the javascript that is already on the site. The way it differs from a reflected XSS attack is that the input is processed client-side only. The malicious code isn't sent from the server. For example:
+This attack is pretty similar to Reflected XSS, but it depends on the javascript that is already on the site. The way it differs from a reflected XSS attack is that the input is processed on the client-side only. The malicious code isn't sent from the server. For example:
 
 ```
     Let's say that we have the following URL:
-        https://dynamic-page.com/?s=
+        https://dynamic-page.com/?s=xyz
 
     The page loads and javascript sends an AJAX request and after some time results in the following:
         -----------------------------------------
-        |Search:                                |
+        |Search: xyz                            |
         -----------------------------------------
-
-        |  Item1  |  Item2  |  Item3  |  Item4  |
+        
+        Nothing called xyz.
+        
         ...
 
-    Upon typing stuff into the searchbar, items appear or disappear accordingly to what was typed (because of AJAX).
+    Upon typing into the searchbar, items appear or disappear accordingly to what was typed (because of AJAX).
 
-    If the attacker gives a simple script tag with an alert function to the input, the alert box opens.
+    If the attacker gave a simple img tag with an alert function on error to the input, the alert box opens.
 ```
 
-DOM-based XSS can also be undetectable if fragments are used on the site (#), because fragments never get sent to the server, whereas parameters are. This kind of attack is more and more common as web applications become more advanced. Bare in mind that even if a website has a completely secure backend, that does not mean that the frontend will handle user input safely.
+DOM-based XSS attack vectors can also be **undetectable** if fragments are used on the site (#), because fragments never get sent to the server, whereas query strings are. This kind of attack is more and more common as web applications become more advanced. Bare in mind that even if a website has a completely secure backend, that does not mean that the frontend will handle user input safely.
 
 ### How to prevent it?
 
