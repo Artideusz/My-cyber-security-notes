@@ -67,7 +67,8 @@ You can also use a **bind mount**, which is basically a folder on the host syste
 - `docker logs <id || name>` - Logs information as if you ran a container from the terminal unattached.
 - `docker commit <container> <new_image>` - Creates a new image using a container.
 - `docker cp <file || folder> <container>:<destination_file || folder>` - Copy a file or folder to a destination file or folder in the container.
-
+- `docker build <project_directory>` - Build an image using a Dockerfile inside a project.
+    - `-t` - Tag name of the image.
 
 ### Useful resources
 - [Kodekloud Docker Course - FREE (To Be Checked)](https://kodekloud.com/p/docker-labs)
